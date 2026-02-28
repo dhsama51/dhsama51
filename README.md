@@ -1,7 +1,6 @@
 <div align= "center">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=#b897ff&height=120&text=&animation=&fontColor=000000&fontSize=70" />
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&text=이동훈%20(Lee%20DongHoon)&animation=&fontColor=000000&fontSize=50" />
 </div>
-    
 
 <br/>
 <br/>
