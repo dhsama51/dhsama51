@@ -10,7 +10,7 @@
 <br/>
 <br/>
 
-<h3 align='center'>Education</h3>
+<h3 align='center'>학력 및 전공 (Education)</h3>
 
 <div align='center'>
   
