@@ -73,7 +73,7 @@
 
 <div align='center'>
 
-<b> 국민암호페스티벌 우수상 </b>
+<b> 국민암호페스티벌 2025 우수상 </b>
 <br/>
 
 </div>
@@ -81,7 +81,7 @@
 <br/>
 <br/>
 
-<h3 align='center'>🛠️ Stacks & Tools</h3>
+<h3 align='center'> Stacks & Tools</h3>
 <div align='center'>
   <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=C&logoColor=black"/>
   <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=black"/>
