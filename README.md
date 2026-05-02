@@ -9,7 +9,7 @@
 
 ---
 
-## 🏛 Education & Organization
+## Education & Organization
 
 <table width="100%">
 <thead>
@@ -63,7 +63,7 @@
 
 ---
 
-## 👋 About Me
+## About Me
 
 <div align="center">
 
@@ -75,7 +75,7 @@
 
 ---
 
-## 🔬 Research Interests
+## Research Interests
 
 <table width="100%">
 <thead>
@@ -102,7 +102,7 @@
 
 ---
 
-## 🚀 Activities & Projects
+## Activities & Projects
 
 <table width="100%">
 <thead>
@@ -227,7 +227,7 @@
 
 ---
 
-## 📜 Certifications
+## Certifications
 
 <table width="100%">
 <thead>
@@ -273,7 +273,7 @@
 
 ---
 
-## 🌎 Language
+## Language
 
 <table width="100%">
 <thead>
@@ -294,7 +294,7 @@
 
 ---
 
-## 🏆 Awards
+## Awards
 
 <table width="100%">
 <thead>
@@ -315,7 +315,7 @@
 
 ---
 
-## 📝 Publications & Posters
+## Publications & Posters
 
 <table width="100%">
 <thead>
@@ -347,7 +347,7 @@
 
 ---
 
-## 💻 Stacks & Tools
+## Stacks & Tools
 
 <div align="center">
 
