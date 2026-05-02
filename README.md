@@ -129,7 +129,7 @@
 | Year | Venue | Type | Title / Topic | Link |
 | --- | --- | --- | --- | --- |
 | 2025 | MobiSec | Poster Paper | Validation of Traceability Attacks in NAS Registration Procedure | [Paper / Poster](./assets/MobiSec_2025_poster_paper.pdf) |
-| 2025 | 국민암호페스티벌 | Poster | OpenSSL CVE-2015-1793: TLS 인증서 검증 우회 공격 재현 | [Poster](./assets/kookmin_crypto_festival_poster.pdf) |
+| 2025 | 국민암호페스티벌 | Poster | OpenSSL CVE-2015-1793: TLS 인증서 검증 우회 공격 재현 | [Poster](./assets/kookmin_crypto_festival_2025_poster.pdf) |
 
 </div>
 
