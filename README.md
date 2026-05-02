@@ -21,7 +21,7 @@
 |국민대학교|25.09 ~ 25.11|FaS|정보보안암호수학과 디지털포렌식 학술동아리|
 |국민대학교|25.09 ~ 25.11|DAlpha|소프트웨어학부 보안 학술동아리|
 |국민대학교|25.09 ~ 25.11|MOViNET|정보보안암호수학과 5G 보안 학술동아리|
-|국민대학교|25.09 ~ 25.11|MobiSec 학부연구생|
+|국민대학교|25.09 ~ 25.11|MobiSec 학부연구생|5G 보안 및 TLS 분석|
 |국민대학교|26.01 ~ 26.04|CSE 학부 인턴|
 
 </div>
@@ -31,8 +31,8 @@
 <div align='center'>
 
 국민대학교 정보보안암호수학과에 재학 중이며, 소프트웨어융합대학을 복수전공하고 있습니다.  
-암호 알고리즘 및 보안 전반에 대한 이해와 AI를 결합하여 하드웨어 환경에서 안전하고 효율적으로 구현하는 문제에 관심이 있습니다.  
-현재 관심 분야는 cryptographic implementation, hardware security, secure element, AI입니다.
+암호 알고리즘과 보안 시스템에 대한 이해를 바탕으로, 하드웨어 환경에서 안전하고 효율적인 보안 기능을 구현하는 문제에 관심이 있습니다.  
+최근에는 cryptographic implementation, hardware security, secure element, AI security에 관심을 두고 있습니다.
 
 </div>
 
@@ -50,7 +50,7 @@
 
 </div>
 
-<h3 align='center'>활동 (Activites)</h3>
+<h3 align='center'>활동 (Activities)</h3>
 
 <div align='center'>
 
