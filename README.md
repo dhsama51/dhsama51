@@ -22,7 +22,7 @@
 |국민대학교|25.09 ~ 25.11|DAlpha|소프트웨어학부 보안 학술동아리|
 |국민대학교|25.09 ~ 25.11|MOViNET|정보보안암호수학과 5G 보안 학술동아리|
 |국민대학교|25.09 ~ 25.11|MobiSec 학부연구생|5G 보안 및 TLS 분석|
-|국민대학교|26.01 ~ 26.04|CSE 학부 인턴|
+|국민대학교|26.01 ~ 26.04|CSE 학부 인턴|암호 구현 및 CKKS 성능 분석|
 
 </div>
 
@@ -46,7 +46,7 @@
 | --- | --- |
 | Cryptography & Implementation | AES, LEA, ECC, CKKS, Big Number Arithmetic, SEAL, SEAL-Embedded |
 | Hardware Security | Secure Element, TPM, TEE, PUF, Side-Channel Analysis |
-| AI & Security | Reinforcement Learning, AI Hardware |
+| AI & Security | Reinforcement Learning, AI Hardware Security|
 
 </div>
 
@@ -112,13 +112,26 @@
 
 </div>
 
-
 <h3 align='center'>수상 실적 (Awards)</h3>
 
 <div align='center'>
 
-<b> 국민암호페스티벌 2025 우수상 (TLS 취약점 CVE-2015-1793(인증서 체인 검증 우회) 재현) </b>
-<br/>
+| 일자 | 대회명 | 수상 | 내용 |
+| --- | --- | --- | --- |
+| 2025 | 국민암호페스티벌 | 우수상 | TLS CVE-2015-1793 인증서 체인 검증 우회 재현 |
+
+</div>
+
+<h3 align='center'>Publications & Posters</h3>
+
+<div align='center'>
+
+| Year | Venue | Type | Title / Topic |
+| --- | --- | --- | --- |
+| 2025 | 정보보호학회 동계학술대회 | Poster Paper | Validation of Traceability Attacks in NAS Registration Procedure |
+| 2025 | 국민암호페스티벌 | Poster | OpenSSL CVE-2015-1793: TLS 인증서 검증 우회 공격 재현 |
+
+</div>
 
 </div>
 
