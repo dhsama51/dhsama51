@@ -118,13 +118,13 @@
 <td nowrap="nowrap">26.05 ~</td>
 <td><b>2026 암호분석경진대회</b></td>
 <td>대외활동</td>
-<td>[C, Python] 팀 참가 — 포렌식 및 동형암호 관련 문제 참여 예정</td>
+<td>[C, Python] 팀 구성 완료 (포렌식 및 동형암호 관련 문제 담당)</td>
 </tr>
 <tr>
 <td nowrap="nowrap">26.01 ~</td>
 <td><b>Call of the King</b></td>
 <td>캡스톤</td>
-<td>[Python] 강화학습 에이전트를 활용한 카드게임 밸런싱 자동화 — RL agent 개발</td>
+<td>[Python] 강화학습 에이전트를 활용한 카드게임 밸런싱 자동화 (RL agent 개발 담당)</td>
 </tr>
 <tr>
 <td nowrap="nowrap">26.03 ~ 26.04</td>
@@ -157,13 +157,13 @@
 <td nowrap="nowrap">25.11 ~ 25.12</td>
 <td><b>Let's Quiz</b></td>
 <td>보안NW프로그래밍</td>
-<td>[C] 안전한 실시간 멀티스레딩 퀴즈 프로그램 구현 — 퀴즈 진행 프로토콜 및 코드 병합</td>
+<td>[C] 안전한 실시간 멀티스레딩 퀴즈 프로그램 구현 (퀴즈 진행 프로토콜 및 코드 병합 담당)</td>
 </tr>
 <tr>
 <td nowrap="nowrap">25.11</td>
 <td><b>Encrypted Traffic Analysis</b></td>
 <td>정보보호와시스템보안</td>
-<td>[Python] AI를 이용한 암호화 트래픽 분석 및 웹사이트 식별 — AI 모델 개선</td>
+<td>[Python] AI를 이용한 암호화 트래픽 분석 및 웹사이트 식별 (AI 모델 개선 담당)</td>
 </tr>
 <tr>
 <td nowrap="nowrap">24.10 ~ 24.12</td>
@@ -201,25 +201,25 @@
 <tr>
 <td nowrap="nowrap">22.02 ~ 22.03</td>
 <td><b>Algorithm Study</b></td>
-<td>동아리</td>
+<td>학술 동아리</td>
 <td>[Python] 백준 알고리즘 문제 풀이 및 자료 공유</td>
 </tr>
 <tr>
 <td nowrap="nowrap">21.09 ~ 21.12</td>
 <td><b>Encrypted File Transfer GUI</b></td>
-<td>동아리</td>
+<td>학술 동아리</td>
 <td>[Python] tkinter, socket, AES를 이용한 파일 암복호화 전송 GUI 프로그램 구현</td>
 </tr>
 <tr>
 <td nowrap="nowrap">21.07 ~ 21.09</td>
 <td><b>ToyCipher Differential Cryptanalysis</b></td>
-<td>동아리</td>
+<td>학술 동아리</td>
 <td>[C] ToyCipher에 대한 차분 공격 구현</td>
 </tr>
 <tr>
 <td nowrap="nowrap">21.04 ~ 21.07</td>
 <td><b>AES-128 Implementation</b></td>
-<td>동아리</td>
+<td>학술 동아리</td>
 <td>[C] AES-128 구현</td>
 </tr>
 </tbody>
