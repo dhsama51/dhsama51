@@ -14,7 +14,7 @@
 
 <div align='center'>
   
-|소속 및 단체|활동 기간|내용|설명
+|소속 및 단체|활동 기간|내용|설명|
 |---|---|---|---|
 |국민대학교|21.03 ~|국민대학교 정보보안암호수학과|재학|
 |국민대학교|22.05 ~|국민대학교 소프트웨어학부|복수전공|
@@ -46,7 +46,7 @@
 | --- | --- |
 | Cryptography & Implementation | AES, LEA, ECC, CKKS, Big Number Arithmetic, SEAL, SEAL-Embedded |
 | Hardware Security | Secure Element, TPM, TEE, PUF, Side-Channel Analysis |
-| AI & Security | Reinforcement Learning, AI Hardware Security|
+| AI & Security | Encrypted Traffic Analysis, Reinforcement Learning, AI Hardware Security |
 
 </div>
 
@@ -130,8 +130,6 @@
 | --- | --- | --- | --- | --- |
 | 2025 | MobiSec | Poster Paper | Validation of Traceability Attacks in NAS Registration Procedure | [Paper / Poster](./assets/MobiSec_2025_poster_paper.pdf) |
 | 2025 | 국민암호페스티벌 | Poster | OpenSSL CVE-2015-1793: TLS 인증서 검증 우회 공격 재현 | [Poster](./assets/kookmin_crypto_festival_2025_poster.pdf) |
-
-</div>
 
 </div>
 
