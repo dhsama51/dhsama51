@@ -121,31 +121,31 @@ My long-term goal is to develop intelligent agents that can **perceive, reason, 
 <tbody>
 <tr>
 <td nowrap="nowrap">26.01 ~ 26.05</td>
-<td><b>Call of the King</b></td>
+<td><a href="https://github.com/dhsama51/26-1_Capstone_Reinforcement_Learning_Agent_in_Handmade_Card_Game"><b>Call of the King</b></a></td>
 <td>Capstone Design</td>
 <td>[Python, PyTorch] Developed a reinforcement learning agent for automated card-game balancing using PPO-based training and rule-based evaluation.</td>
 </tr>
 <tr>
 <td nowrap="nowrap">26.03 ~ 26.06</td>
-<td><b>Image Captioning & VLM Study</b></td>
+<td><a href="https://github.com/dhsama51/Software/tree/main/26-1%20Multimodal%20AI"><b>Image Captioning & VLM Study</b></a></td>
 <td>멀티모달인공지능</td>
 <td>[Python, PyTorch] Studied image captioning, vision-language modeling, visual representation learning, and multimodal reasoning.</td>
 </tr>
 <tr>
 <td nowrap="nowrap">26.03 ~ 26.06</td>
-<td><b>AI Accelerator & Systolic Array Study</b></td>
+<td><a href="https://github.com/dhsama51/Software/tree/main/26-1%20AI%20Hardware"><b>AI Accelerator & Systolic Array Study</b></a></td>
 <td>인공지능하드웨어</td>
 <td>[Python] Studied AI accelerator concepts, systolic arrays, model compression, and hardware-aware deep learning execution.</td>
 </tr>
 <tr>
 <td nowrap="nowrap">25.11</td>
-<td><b>Encrypted Traffic Analysis</b></td>
+<td><a href="https://github.com/dhsama51/Software/tree/main/25-2%20Information%20and%20System%20Security"><b>Encrypted Traffic Analysis</b></a></td>
 <td>정보보호와시스템보안 프로젝트</td>
 <td>[Python] Built a Soft Voting Classifier by combining Random Forest and XGBoost in a 1:1 ratio for encrypted traffic classification and website fingerprinting.</td>
 </tr>
 <tr>
 <td nowrap="nowrap">26.05</td>
-<td><b>FPGA Snake Game</b></td>
+<td><a href="https://github.com/dhsama51/Software/tree/main/26-1%20Digital%20Logic%20Design"><b>FPGA Snake Game</b></a></td>
 <td>논리회로설계</td>
 <td>[Verilog] Implemented a Snake Game on FPGA and compared software-level and RTL-level implementation behavior.</td>
 </tr>
@@ -185,8 +185,14 @@ My long-term goal is to develop intelligent agents that can **perceive, reason, 
 <td>[OpenSSL] Analyzed and reproduced a TLS certificate chain validation bypass vulnerability.</td>
 </tr>
 <tr>
+<td nowrap="nowrap">25.11 ~ 25.12</td>
+<td><a href="https://github.com/dhsama51/Information_Security_Cryptography_and_Mathematics/tree/main/25-2%20Security%20Network%20Programming"><b>Let&apos;s Quiz</b></a></td>
+<td>보안NW프로그래밍</td>
+<td>[C] Implemented a secure real-time multithreaded quiz program.</td>
+</tr>
+<tr>
 <td nowrap="nowrap">24.10 ~ 24.12</td>
-<td><b>miniTLS & Padding Oracle Attack</b></td>
+<td><a href="https://github.com/dhsama51/Information_Security_Cryptography_and_Mathematics/tree/main/24-2%20Security%20Protocol"><b>miniTLS & Padding Oracle Attack</b></a></td>
 <td>Security Protocols</td>
 <td>[Python] Implemented a miniTLS protocol and reproduced a padding oracle attack.</td>
 </tr>
