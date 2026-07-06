@@ -38,6 +38,11 @@
 <tr><td colspan="3"><br/></td></tr>
 
 <tr>
+<td nowrap="nowrap">26.06 ~ </td>
+<td><b>9th LG Aimers</b></td>
+<td>AI교육 및 LG의 실제 데이터를 다루는 AI 해커톤</td>
+</tr>
+<tr>
 <td nowrap="nowrap">26.01 ~ 26.04</td>
 <td><b>CSE</b></td>
 <td>학부 인턴 — 암호 구현 및 CKKS 성능 분석</td>
