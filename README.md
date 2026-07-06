@@ -39,7 +39,7 @@
 
 <tr>
 <td nowrap="nowrap">26.06 ~ </td>
-<td><b>9th LG Aimers</b></td>
+<td><b>LG Aimers 9th</b></td>
 <td>AI교육 및 LG의 실제 데이터를 다루는 AI 해커톤</td>
 </tr>
 <tr>
