@@ -67,7 +67,7 @@
 <div align="center">
 
 I am an undergraduate student at **Kookmin University**, majoring in **Information Security & Cryptomathematics** and double majoring in **Software**.  
-My current interests lie in **systems and network security, TLS/PKI, web security, and empirical vulnerability analysis**.
+My current interests lie in **systems and network security, TLS, web security, and empirical vulnerability analysis**.
 
 Through research and coursework, I have reproduced published attacks, examined whether their assumptions hold in open-source environments, and implemented security protocols and cryptographic primitives.  
 I aim to extend these experiences toward identifying and experimentally validating security problems in **real-world protocols and implementations**.
