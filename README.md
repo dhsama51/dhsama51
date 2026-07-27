@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=b4c5f9&height=180&text=%EC%9D%B4%EB%8F%99%ED%9B%88%20(Lee%20DongHoon)&animation=&fontColor=000000&fontSize=50" />
 
 ### Lee DongHoon  
-<em>Computer Vision · 3D Vision · Spatial AI · Multimodal AI</em>
+<em>Systems & Network Security · TLS/PKI · Web Security · Empirical Vulnerability Analysis</em>
 
 <br/>
 
@@ -44,7 +44,7 @@
 </tr>
 <tr>
 <td nowrap="nowrap">26.01 ~ 26.04</td>
-<td><b>CSE</b></td>
+<td><a href="https://github.com/dhsama51/CSE"><b>CSE</b></a></td>
 <td>학부 인턴 — 암호 구현 및 CKKS 성능 분석</td>
 </tr>
 <tr>
@@ -67,10 +67,10 @@
 <div align="center">
 
 I am an undergraduate student at **Kookmin University**, majoring in **Information Security & Cryptomathematics** and double majoring in **Software**.  
-My current interests lie in **Computer Vision, 3D Vision, Spatial AI, and Multimodal AI**.
+My current interests lie in **systems and network security, TLS/PKI, web security, and empirical vulnerability analysis**.
 
-Previously, I studied cryptography, network security, and secure systems, which helped me build a strong foundation in **mathematical reasoning, system-level implementation, and experimental problem solving**.  
-I am now expanding this background toward AI research, especially in **visual perception, spatial understanding, and multimodal reasoning for complex environments**.
+Through research and coursework, I have reproduced published attacks, examined whether their assumptions hold in open-source environments, and implemented security protocols and cryptographic primitives.  
+I aim to extend these experiences toward identifying and experimentally validating security problems in **real-world protocols and implementations**.
 
 </div>
 
@@ -87,16 +87,16 @@ I am now expanding this background toward AI research, especially in **visual pe
 </thead>
 <tbody>
 <tr>
-<td><b>Computer Vision</b></td>
-<td>Image Understanding, Object Detection, Visual Representation Learning</td>
+<td><b>Systems & Network Security</b></td>
+<td>Protocol Security, Implementation Analysis, Experimental Attack Validation</td>
 </tr>
 <tr>
-<td><b>3D Vision & Spatial AI</b></td>
-<td>3D Scene Understanding, Spatial Reasoning, Vision-Language Navigation</td>
+<td><b>TLS & PKI Security</b></td>
+<td>TLS, Certificate Validation, OpenSSL, Cryptographic Protocols</td>
 </tr>
 <tr>
-<td><b>Multimodal AI</b></td>
-<td>Vision-Language Models, Visual Grounding, Multimodal Representation Learning</td>
+<td><b>Web & Network Security</b></td>
+<td>HTTP Security, Parser Inconsistencies, Security Testing, Vulnerability Analysis</td>
 </tr>
 </tbody>
 </table>
@@ -105,14 +105,14 @@ I am now expanding this background toward AI research, especially in **visual pe
 
 ## 🧭 Research Interest
 
-I am interested in AI systems that understand the physical world through vision.  
-In particular, I want to study how models can learn spatial structure, reason about 3D environments, and connect visual perception with decision-making.
+I am interested in understanding how security assumptions fail across protocol specifications, software implementations, and deployed systems.  
+In particular, I want to study implementation flaws and interpretation gaps in network and web protocols through reproducible experiments.
 
-My long-term goal is to develop intelligent agents that can **perceive, reason, and act in complex visual environments**.
+My long-term goal is to develop practical methods that can **discover, validate, and help mitigate vulnerabilities in real-world systems**.
 
 ---
 
-## 🤖 Selected AI Projects
+## 🤖 Selected Projects
 
 <table width="100%">
 <thead>
@@ -125,34 +125,34 @@ My long-term goal is to develop intelligent agents that can **perceive, reason, 
 </thead>
 <tbody>
 <tr>
-<td nowrap="nowrap">26.01 ~ 26.05</td>
-<td><a href="https://github.com/dhsama51/26-1_Capstone_Reinforcement_Learning_Agent_in_Handmade_Card_Game"><b>Call of the King</b></a></td>
-<td>Capstone Design</td>
-<td>[Python, PyTorch] Developed a reinforcement learning agent for automated card-game balancing using PPO-based training and rule-based evaluation.</td>
+<td nowrap="nowrap">25.07 ~ 25.11</td>
+<td><a href="./assets/MobiSec_2025_poster_paper.pdf"><b>5G NAS Traceability Attack Validation</b></a></td>
+<td>MobiSec Undergraduate Intern</td>
+<td>[5G, Open-Source Testbed] Reproduced a published traceability attack and experimentally examined whether its assumptions held in the tested environment.</td>
 </tr>
 <tr>
-<td nowrap="nowrap">26.03 ~ 26.06</td>
-<td><a href="https://github.com/dhsama51/Software/tree/main/26-1%20Multimodal%20AI"><b>Image Captioning & VLM Study</b></a></td>
-<td>멀티모달인공지능</td>
-<td>[Python, PyTorch] Studied image captioning, vision-language modeling, visual representation learning, and multimodal reasoning.</td>
+<td nowrap="nowrap">25.07 ~ 25.08</td>
+<td><a href="./assets/kookmin_crypto_festival_2025_poster.pdf"><b>OpenSSL CVE-2015-1793 Reproduction</b></a></td>
+<td>MobiSec Undergraduate Intern</td>
+<td>[OpenSSL, TLS/PKI] Analyzed and reproduced a certificate-chain validation bypass and compared vulnerable and corrected validation behavior.</td>
 </tr>
 <tr>
-<td nowrap="nowrap">26.03 ~ 26.06</td>
-<td><a href="https://github.com/dhsama51/Software/tree/main/26-1%20AI%20Hardware"><b>AI Accelerator & Systolic Array Study</b></a></td>
-<td>인공지능하드웨어</td>
-<td>[Python] Studied AI accelerator concepts, systolic arrays, model compression, and hardware-aware deep learning execution.</td>
+<td nowrap="nowrap">24.10 ~ 24.12</td>
+<td><a href="https://github.com/dhsama51/Information_Security_Cryptography_and_Mathematics/tree/main/24-2%20Security%20Protocol"><b>miniTLS & Padding Oracle Attack</b></a></td>
+<td>Security Protocols</td>
+<td>[Python] Implemented a simplified TLS-like protocol and reproduced a padding oracle attack caused by distinguishable server responses.</td>
+</tr>
+<tr>
+<td nowrap="nowrap">25.11 ~ 25.12</td>
+<td><a href="https://github.com/dhsama51/Information_Security_Cryptography_and_Mathematics/tree/main/25-2%20Security%20Network%20Programming"><b>Let&apos;s Quiz</b></a></td>
+<td>보안NW프로그래밍</td>
+<td>[C, OpenSSL] Implemented a TLS-based real-time multithreaded quiz system with concurrent client and session handling.</td>
 </tr>
 <tr>
 <td nowrap="nowrap">25.11</td>
 <td><a href="https://github.com/dhsama51/Software/tree/main/25-2%20Information%20and%20System%20Security"><b>Encrypted Traffic Analysis</b></a></td>
 <td>정보보호와시스템보안 프로젝트</td>
-<td>[Python] Built a Soft Voting Classifier by combining Random Forest and XGBoost in a 1:1 ratio for encrypted traffic classification and website fingerprinting.</td>
-</tr>
-<tr>
-<td nowrap="nowrap">26.05</td>
-<td><a href="https://github.com/dhsama51/Software/tree/main/26-1%20Digital%20Logic%20Design"><b>FPGA Snake Game</b></a></td>
-<td>논리회로설계</td>
-<td>[Verilog] Implemented a Snake Game on FPGA and compared software-level and RTL-level implementation behavior.</td>
+<td>[Python] Analyzed encrypted traffic for website fingerprinting using a Soft Voting Classifier combining Random Forest and XGBoost.</td>
 </tr>
 </tbody>
 </table>
@@ -179,27 +179,27 @@ My long-term goal is to develop intelligent agents that can **perceive, reason, 
 </tr>
 <tr>
 <td nowrap="nowrap">26.01 ~ 26.02</td>
-<td><b>Cryptographic Arithmetic Implementation</b></td>
+<td><a href="https://github.com/dhsama51/CSE"><b>Cryptographic Arithmetic Implementation</b></a></td>
 <td>CSE Undergraduate Intern</td>
-<td>[C] Implemented LEA, Big Number Library, and elliptic curve arithmetic.</td>
+<td>[C] Implemented LEA-128/192/256, 256-bit P-256 field arithmetic, elliptic-curve point operations, and multiple scalar-multiplication algorithms.</td>
 </tr>
 <tr>
-<td nowrap="nowrap">25.07 ~ 25.08</td>
-<td><b>OpenSSL CVE-2015-1793 Reproduction</b></td>
-<td>MobiSec Undergraduate Intern</td>
-<td>[OpenSSL] Analyzed and reproduced a TLS certificate chain validation bypass vulnerability.</td>
+<td nowrap="nowrap">26.01 ~ 26.05</td>
+<td><a href="https://github.com/dhsama51/26-1_Capstone_Reinforcement_Learning_Agent_in_Handmade_Card_Game"><b>Call of the King</b></a></td>
+<td>Capstone Design</td>
+<td>[Python, PyTorch] Developed a PPO-based reinforcement learning agent and built a TCP pipeline between the training environment and a C# game engine.</td>
 </tr>
 <tr>
-<td nowrap="nowrap">25.11 ~ 25.12</td>
-<td><a href="https://github.com/dhsama51/Information_Security_Cryptography_and_Mathematics/tree/main/25-2%20Security%20Network%20Programming"><b>Let&apos;s Quiz</b></a></td>
-<td>보안NW프로그래밍</td>
-<td>[C] Implemented a secure real-time multithreaded quiz program.</td>
+<td nowrap="nowrap">26.03 ~ 26.06</td>
+<td><a href="https://github.com/dhsama51/Software/tree/main/26-1%20AI%20Hardware"><b>AI Accelerator & Systolic Array Study</b></a></td>
+<td>인공지능하드웨어</td>
+<td>[Python] Studied systolic arrays, model compression, and hardware-aware deep learning execution.</td>
 </tr>
 <tr>
-<td nowrap="nowrap">24.10 ~ 24.12</td>
-<td><a href="https://github.com/dhsama51/Information_Security_Cryptography_and_Mathematics/tree/main/24-2%20Security%20Protocol"><b>miniTLS & Padding Oracle Attack</b></a></td>
-<td>Security Protocols</td>
-<td>[Python] Implemented a miniTLS protocol and reproduced a padding oracle attack.</td>
+<td nowrap="nowrap">26.05</td>
+<td><a href="https://github.com/dhsama51/Software/tree/main/26-1%20Digital%20Logic%20Design"><b>FPGA Snake Game</b></a></td>
+<td>논리회로설계</td>
+<td>[Verilog] Implemented a Snake Game on FPGA and compared software-level and RTL-level implementation behavior.</td>
 </tr>
 <tr>
 <td nowrap="nowrap">22.09 ~ 24.03</td>
@@ -232,12 +232,12 @@ My long-term goal is to develop intelligent agents that can **perceive, reason, 
 <tr>
 <td nowrap="nowrap">26.03.13</td>
 <td nowrap="nowrap"><b>정보보안기사 필기 합격</b></td>
-<td nowrap="nowrap">26.07 실기 예정</td>
+<td nowrap="nowrap">26.07.25 실기 응시 완료</td>
 </tr>
 <tr>
 <td nowrap="nowrap">26.03.11</td>
 <td nowrap="nowrap"><b>정보처리기사 필기 합격</b></td>
-<td nowrap="nowrap">26.07 실기 예정</td>
+<td nowrap="nowrap">26.07.19 실기 응시 완료</td>
 </tr>
 <tr>
 <td nowrap="nowrap">23.12.01</td>
