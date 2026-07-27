@@ -49,7 +49,7 @@
 </tr>
 <tr>
 <td nowrap="nowrap">25.07 ~ 25.11</td>
-<td><b>MobiSec</b></td>
+<td><a href="https://github.com/dhsama51/MobiSec"><b>MobiSec</b></a></td>
 <td>학부 인턴 / 학부연구생 — TLS 분석 및 5G 보안</td>
 </tr>
 <tr>
@@ -91,7 +91,7 @@ I aim to extend these experiences toward identifying and experimentally validati
 <td>Protocol Security, Implementation Analysis, Experimental Attack Validation</td>
 </tr>
 <tr>
-<td><b>TLS & PKI Security</b></td>
+<td><b>TLS Security</b></td>
 <td>TLS, Certificate Validation, OpenSSL, Cryptographic Protocols</td>
 </tr>
 <tr>
@@ -126,15 +126,21 @@ My long-term goal is to develop practical methods that can **discover, validate,
 <tbody>
 <tr>
 <td nowrap="nowrap">25.07 ~ 25.11</td>
-<td><a href="./assets/MobiSec_2025_poster_paper.pdf"><b>5G NAS Traceability Attack Validation</b></a></td>
+<td><a href="https://github.com/dhsama51/MobiSec/blob/main/Validation%20of%20Traceability%20Attacks%20in%20NAS%20Registration%20Procedure.pdf"><b>5G NAS Traceability Attack Validation</b></a></td>
 <td>MobiSec Undergraduate Intern</td>
 <td>[5G, Open-Source Testbed] Reproduced a published traceability attack and experimentally examined whether its assumptions held in the tested environment.</td>
 </tr>
 <tr>
 <td nowrap="nowrap">25.07 ~ 25.08</td>
-<td><a href="./assets/kookmin_crypto_festival_2025_poster.pdf"><b>OpenSSL CVE-2015-1793 Reproduction</b></a></td>
+<td><a href="https://github.com/dhsama51/Information_Security_Cryptography_and_Mathematics/blob/main/25-2%20Kookmin%20Crypto%20Festival/%EC%9D%B4%EB%8F%99%ED%9B%88%20%ED%8F%AC%EC%8A%A4%ED%84%B0%20OpenSSL%20CVE-2015-1793%20TLS%20%EC%9D%B8%EC%A6%9D%EC%84%9C%20%EA%B2%80%EC%A6%9D%20%EC%9A%B0%ED%9A%8C%20%EA%B3%B5%EA%B2%A9%20%EC%9E%AC%ED%98%84.pdf"><b>OpenSSL CVE-2015-1793 Reproduction</b></a></td>
 <td>MobiSec Undergraduate Intern</td>
 <td>[OpenSSL, TLS/PKI] Analyzed and reproduced a certificate-chain validation bypass and compared vulnerable and corrected validation behavior.</td>
+</tr>
+<tr>
+<td nowrap="nowrap">2025</td>
+<td><a href="https://github.com/dhsama51/Information_Security_Cryptography_and_Mathematics/blob/main/25-2%20Kookmin%20Crypto%20Festival/%EC%A0%95%EC%9C%A0%EC%A7%84%2C%20%EC%9D%B4%EB%8F%99%ED%9B%88%20%ED%8F%AC%EC%8A%A4%ED%84%B0%202025%20%EC%95%94%ED%98%B8%EB%B6%84%EC%84%9D%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C%206%EB%B2%88%20%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4.pdf"><b>2025 암호분석경진대회 6번 문제 풀이</b></a></td>
+<td>2025 국민암호페스티벌</td>
+<td>[Cryptanalysis, Digital Forensics] Recovered encrypted chat data using known plaintext, traced the exfiltrated files, and extracted a steganographic QR code to identify the meeting location.</td>
 </tr>
 <tr>
 <td nowrap="nowrap">24.10 ~ 24.12</td>
@@ -293,14 +299,14 @@ My long-term goal is to develop practical methods that can **discover, validate,
 <td><b>MobiSec</b></td>
 <td>Poster Paper</td>
 <td>Validation of Traceability Attacks in NAS Registration Procedure</td>
-<td><a href="./assets/MobiSec_2025_poster_paper.pdf">Link</a></td>
+<td><a href="https://github.com/dhsama51/MobiSec/blob/main/Validation%20of%20Traceability%20Attacks%20in%20NAS%20Registration%20Procedure.pdf">Link</a></td>
 </tr>
 <tr>
 <td nowrap="nowrap">2025</td>
 <td><b>국민암호페스티벌</b></td>
 <td>Poster</td>
 <td>OpenSSL CVE-2015-1793: TLS 인증서 검증 우회 공격 재현</td>
-<td><a href="./assets/kookmin_crypto_festival_2025_poster.pdf">Link</a></td>
+<td><a href="https://github.com/dhsama51/Information_Security_Cryptography_and_Mathematics/blob/main/25-2%20Kookmin%20Crypto%20Festival/%EC%9D%B4%EB%8F%99%ED%9B%88%20%ED%8F%AC%EC%8A%A4%ED%84%B0%20OpenSSL%20CVE-2015-1793%20TLS%20%EC%9D%B8%EC%A6%9D%EC%84%9C%20%EA%B2%80%EC%A6%9D%20%EC%9A%B0%ED%9A%8C%20%EA%B3%B5%EA%B2%A9%20%EC%9E%AC%ED%98%84.pdf">Link</a></td>
 </tr>
 </tbody>
 </table>
