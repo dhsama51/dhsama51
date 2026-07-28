@@ -26,12 +26,12 @@
 <tbody>
 <tr>
 <td nowrap="nowrap">21.03 ~</td>
-<td><b>Department of Information Security, Cryptology and Mathematics</b></td>
+<td><b>정보보안암호수학과</b></td>
 <td>Undergraduate Student at Kookmin University</td>
 </tr>
 <tr>
 <td nowrap="nowrap">22.05 ~</td>
-<td><b>School of Software</b></td>
+<td><b>소프트웨어학부</b></td>
 <td>Double Major at Kookmin University</td>
 </tr>
 
