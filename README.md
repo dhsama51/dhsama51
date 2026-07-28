@@ -26,13 +26,13 @@
 <tbody>
 <tr>
 <td nowrap="nowrap">21.03 ~</td>
-<td><b>정보보안암호수학과</b></td>
-<td>국민대학교 재학</td>
+<td><b>Department of Information Security, Cryptology and Mathematics</b></td>
+<td>Undergraduate Student at Kookmin University</td>
 </tr>
 <tr>
 <td nowrap="nowrap">22.05 ~</td>
-<td><b>소프트웨어학부</b></td>
-<td>국민대학교 복수전공</td>
+<td><b>School of Software</b></td>
+<td>Double Major at Kookmin University</td>
 </tr>
 
 <tr><td colspan="3"><br/></td></tr>
@@ -40,22 +40,22 @@
 <tr>
 <td nowrap="nowrap">26.06 ~ </td>
 <td><b>LG Aimers 9th</b></td>
-<td>AI교육 및 LG의 실제 데이터를 다루는 AI 해커톤</td>
+<td>AI training program and hackathon using real-world datasets from LG</td>
 </tr>
 <tr>
 <td nowrap="nowrap">26.01 ~ 26.04</td>
 <td><a href="https://github.com/dhsama51/CSE"><b>CSE</b></a></td>
-<td>학부 인턴 — 암호 구현 및 CKKS 성능 분석</td>
+<td>Undergraduate Intern — Cryptographic implementation and CKKS performance analysis</td>
 </tr>
 <tr>
 <td nowrap="nowrap">25.07 ~ 25.11</td>
 <td><a href="https://github.com/dhsama51/MobiSec"><b>MobiSec</b></a></td>
-<td>학부 인턴 / 학부연구생 — TLS 분석 및 5G 보안</td>
+<td>Undergraduate Intern / Researcher — TLS analysis and 5G security</td>
 </tr>
 <tr>
 <td nowrap="nowrap">25.01 ~ 25.04</td>
 <td><b>FaS</b></td>
-<td>정보보안암호수학과 디지털포렌식 학술동아리</td>
+<td>Digital forensics academic club in the Department of Information Security, Cryptology and Mathematics</td>
 </tr>
 </tbody>
 </table>
