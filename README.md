@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=b4c5f9&height=180&text=%EC%9D%B4%EB%8F%99%ED%9B%88%20(Lee%20DongHoon)&animation=&fontColor=000000&fontSize=50" />
 
 ### Lee DongHoon  
-<em>Systems & Network Security · TLS · Web Security · Empirical Vulnerability Analysis</em>
+<em>Security Research · AI System Security · AI-Assisted Security Testing</em>
 
 <br/>
 
@@ -66,11 +66,11 @@
 
 <div align="center">
 
-I am an undergraduate student at **Kookmin University**, majoring in **Information Security & Cryptomathematics** and double majoring in **Software**.  
-My current interests lie in **systems and network security, TLS, web security, and empirical vulnerability analysis**.
+I am an undergraduate student at **Kookmin University**, majoring in **Information Security & Cryptomathematics** and double-majoring in **Software**.  
+My interests lie at the intersection of **systems security and artificial intelligence**, with a focus on vulnerability analysis, security testing, and failure evaluation.
 
-Through research and coursework, I have reproduced published attacks, examined whether their assumptions hold in open-source environments, and implemented security protocols and cryptographic primitives.  
-I aim to extend these experiences toward identifying and experimentally validating security problems in **real-world protocols and implementations**.
+Through research and coursework, I have reproduced attacks against **5G and TLS systems**, examined whether their underlying assumptions hold in open-source implementations, and implemented **security protocols and cryptographic primitives**. I have also applied machine-learning models to encrypted traffic analysis and gained experience with LLMs and vision-language models through various AI projects.  
+Building on this foundation, I aim to study **network and protocol security**, the **security of LLMs and AI agents**, and **AI-assisted security testing**.
 
 </div>
 
@@ -87,16 +87,16 @@ I aim to extend these experiences toward identifying and experimentally validati
 </thead>
 <tbody>
 <tr>
-<td><b>Systems & Network Security</b></td>
-<td>Protocol Security, Implementation Analysis, Experimental Attack Validation</td>
+<td><b>AI System Security</b></td>
+<td>Generative AI Security, AI Agent Security, Adversarial Testing, Failure Analysis</td>
 </tr>
 <tr>
-<td><b>TLS Security</b></td>
-<td>TLS, Certificate Validation, OpenSSL, Cryptographic Protocols</td>
+<td><b>AI-Assisted Security Testing</b></td>
+<td>LLM-Based Fuzzing, Harness Generation, Automated Red-Teaming, Vulnerability Discovery</td>
 </tr>
 <tr>
-<td><b>Web & Network Security</b></td>
-<td>HTTP Security, Parser Inconsistencies, Security Testing, Vulnerability Analysis</td>
+<td><b>Systems & Protocol Security</b></td>
+<td>TLS/PKI, 5G Security, Implementation Analysis, Experimental Attack Validation</td>
 </tr>
 </tbody>
 </table>
@@ -105,10 +105,11 @@ I aim to extend these experiences toward identifying and experimentally validati
 
 ## 🧭 Research Interest
 
-I am interested in understanding how security assumptions fail across protocol specifications, software implementations, and deployed systems.  
-In particular, I want to study implementation flaws and interpretation gaps in network and web protocols through reproducible experiments.
+My previous work has focused on reproducing vulnerabilities and identifying the conditions under which security assumptions fail across specifications, implementations, and deployed systems. These experiences taught me to approach security problems through concrete threat models, reproducible experiments, and systematic analysis of failure conditions.
 
-My long-term goal is to develop practical methods that can **discover, validate, and help mitigate vulnerabilities in real-world systems**.
+I now want to extend this approach in two directions: evaluating vulnerabilities and unexpected behaviors in **network protocols, TLS implementations, and AI-enabled systems**; and using **AI to automate security-testing tasks** such as fuzzing-harness generation, test-input generation, and API call-sequence generation.
+
+My long-term goal is to develop practical methods for **discovering, validating, and mitigating vulnerabilities in both real-world software and AI-enabled systems**.
 
 ---
 
