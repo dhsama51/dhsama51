@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=b4c5f9&height=180&text=%EC%9D%B4%EB%8F%99%ED%9B%88%20(Lee%20DongHoon)&animation=&fontColor=000000&fontSize=50" />
 
 ### Lee DongHoon  
-<em>AI Security · Security for AI</em>
+<em>Systems & Network Security · TLS · Web Security · Empirical Vulnerability Analysis</em>
 
 <br/>
 
@@ -67,10 +67,10 @@
 <div align="center">
 
 I am an undergraduate student at **Kookmin University**, majoring in **Information Security & Cryptomathematics** and double majoring in **Software**.  
-My current interests lie in **artificial intelligence, multimodal learning, and the security of AI systems**.
+My current interests lie in **systems and network security, TLS, web security, and empirical vulnerability analysis**.
 
-Through AI coursework and projects, I have built machine-learning pipelines, experimented with CLIP-based zero-shot classification, and developed a PPO-based reinforcement-learning agent with a Transformer-based state representation.  
-Building on my background in security research and software implementation, I aim to study **reliable and secure AI systems** and practical methods for analyzing and improving their behavior.
+Through research and coursework, I have reproduced published attacks, examined whether their assumptions hold in open-source environments, and implemented security protocols and cryptographic primitives.  
+I aim to extend these experiences toward identifying and experimentally validating security problems in **real-world protocols and implementations**.
 
 </div>
 
@@ -87,12 +87,16 @@ Building on my background in security research and software implementation, I ai
 </thead>
 <tbody>
 <tr>
-<td><b>Artificial Intelligence</b></td>
-<td>Deep Learning, Representation Learning, Reinforcement Learning</td>
+<td><b>Systems & Network Security</b></td>
+<td>Protocol Security, Implementation Analysis, Experimental Attack Validation</td>
 </tr>
 <tr>
-<td><b>Multimodal & Secure AI</b></td>
-<td>Vision-Language Models, Multimodal Learning, AI Security, Reliable AI Systems</td>
+<td><b>TLS Security</b></td>
+<td>TLS, Certificate Validation, OpenSSL, Cryptographic Protocols</td>
+</tr>
+<tr>
+<td><b>Web & Network Security</b></td>
+<td>HTTP Security, Parser Inconsistencies, Security Testing, Vulnerability Analysis</td>
 </tr>
 </tbody>
 </table>
@@ -101,10 +105,10 @@ Building on my background in security research and software implementation, I ai
 
 ## 🧭 Research Interest
 
-I am interested in how AI models learn representations from different forms of data and how their behavior can be evaluated and improved in practical environments.  
-In particular, I want to study multimodal and generative AI systems while exploring reliability and security issues that arise when these models interact with users, software, and external information.
+I am interested in understanding how security assumptions fail across protocol specifications, software implementations, and deployed systems.  
+In particular, I want to study implementation flaws and interpretation gaps in network and web protocols through reproducible experiments.
 
-My long-term goal is to develop **capable, reliable, and secure AI systems** grounded in both model-level understanding and systematic experimentation.
+My long-term goal is to develop practical methods that can **discover, validate, and help mitigate vulnerabilities in real-world systems**.
 
 ---
 
@@ -121,52 +125,11 @@ My long-term goal is to develop **capable, reliable, and secure AI systems** gro
 </thead>
 <tbody>
 <tr>
-<td nowrap="nowrap">25.11 (2 weeks)</td>
-<td><a href="https://github.com/dhsama51/Software/tree/main/25-2%20Artificial%20Intelligence"><b>AI Course Kaggle Competition</b></a></td>
-<td>Artificial Intelligence</td>
-<td>[Python, PyTorch, Machine Learning] Developed a CIFAR-100 image classifier without pretrained models or external code. Modified the model architecture and tuned hyperparameters, ranking 20th on the course leaderboard.</td>
-</tr>
-<tr>
-<td nowrap="nowrap">26.03 ~ 26.06</td>
-<td><a href="https://github.com/dhsama51/Software/tree/main/26-1%20Multimodal%20AI"><b>CLIP Zero-Shot Classification</b></a></td>
-<td>Multimodal Artificial Intelligence</td>
-<td>[Python, CLIP] Tested zero-shot image classification with different prompt templates and examined how image–text alignment affects predictions.</td>
-</tr>
-<tr>
-<td nowrap="nowrap">26.01 ~ 26.05</td>
-<td><a href="https://github.com/dhsama51/26-1_Capstone_Reinforcement_Learning_Agent_in_Handmade_Card_Game"><b>Call of the King</b></a></td>
-<td>Capstone Design</td>
-<td>[Python, PyTorch] Developed a PPO-based reinforcement-learning agent, applied a Transformer-based state representation, and evaluated multiple baselines for a custom card game.</td>
-</tr>
-<tr>
-<td nowrap="nowrap">25.11</td>
-<td><a href="https://github.com/dhsama51/Software/tree/main/25-2%20Information%20and%20System%20Security"><b>Encrypted Traffic Classification</b></a></td>
-<td>Information &amp; System Security</td>
-<td>[Python, Machine Learning] Classified encrypted web traffic from metadata using a soft-voting ensemble of Random Forest and XGBoost, achieving an F1 score above 90%.</td>
-</tr>
-<tr>
 <td nowrap="nowrap">25.07 ~ 25.11</td>
 <td><a href="https://github.com/dhsama51/MobiSec/blob/main/Validation%20of%20Traceability%20Attacks%20in%20NAS%20Registration%20Procedure.pdf"><b>5G NAS Traceability Attack Validation</b></a></td>
 <td>MobiSec Undergraduate Intern</td>
 <td>[5G, Open-Source Testbed] Reproduced a published traceability attack and experimentally examined whether its assumptions held in the tested environment.</td>
 </tr>
-</tbody>
-</table>
-
----
-
-## 🧩 Security & Systems Background
-
-<table width="100%">
-<thead>
-<tr>
-<th align="left" width="16%">Period</th>
-<th align="left" width="27%">Project / Activity</th>
-<th align="left" width="20%">Affiliation</th>
-<th align="left" width="37%">Description</th>
-</tr>
-</thead>
-<tbody>
 <tr>
 <td nowrap="nowrap">25.07 ~ 25.08</td>
 <td><a href="https://github.com/dhsama51/Information_Security_Cryptography_and_Mathematics/blob/main/25-2%20Kookmin%20Crypto%20Festival/%EC%9D%B4%EB%8F%99%ED%9B%88%20%ED%8F%AC%EC%8A%A4%ED%84%B0%20OpenSSL%20CVE-2015-1793%20TLS%20%EC%9D%B8%EC%A6%9D%EC%84%9C%20%EA%B2%80%EC%A6%9D%20%EC%9A%B0%ED%9A%8C%20%EA%B3%B5%EA%B2%A9%20%EC%9E%AC%ED%98%84.pdf"><b>OpenSSL CVE-2015-1793 Reproduction</b></a></td>
@@ -189,8 +152,31 @@ My long-term goal is to develop **capable, reliable, and secure AI systems** gro
 <td nowrap="nowrap">25.11 ~ 25.12</td>
 <td><a href="https://github.com/dhsama51/Information_Security_Cryptography_and_Mathematics/tree/main/25-2%20Security%20Network%20Programming"><b>Let&apos;s Quiz</b></a></td>
 <td>보안NW프로그래밍</td>
-<td>[C, OpenSSL] Contributed to protocol design, TLS configuration, certificate handling, and code integration for a real-time quiz system.</td>
+<td>[C, OpenSSL] Implemented a TLS-based real-time multithreaded quiz system with concurrent client and session handling.</td>
 </tr>
+<tr>
+<td nowrap="nowrap">25.11</td>
+<td><a href="https://github.com/dhsama51/Software/tree/main/25-2%20Information%20and%20System%20Security"><b>Encrypted Traffic Analysis</b></a></td>
+<td>정보보호와시스템보안 프로젝트</td>
+<td>[Python] Analyzed encrypted traffic for website fingerprinting using a Soft Voting Classifier combining Random Forest and XGBoost.</td>
+</tr>
+</tbody>
+</table>
+
+---
+
+## 🧩 Security & Systems Background
+
+<table width="100%">
+<thead>
+<tr>
+<th align="left" width="16%">Period</th>
+<th align="left" width="27%">Project / Activity</th>
+<th align="left" width="20%">Affiliation</th>
+<th align="left" width="37%">Description</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td nowrap="nowrap">26.03 ~ 26.04</td>
 <td><b>CKKS Performance Analysis</b></td>
@@ -202,6 +188,12 @@ My long-term goal is to develop **capable, reliable, and secure AI systems** gro
 <td><a href="https://github.com/dhsama51/CSE"><b>Cryptographic Arithmetic Implementation</b></a></td>
 <td>CSE Undergraduate Intern</td>
 <td>[C] Implemented LEA-128/192/256, 256-bit P-256 field arithmetic, elliptic-curve point operations, and multiple scalar-multiplication algorithms.</td>
+</tr>
+<tr>
+<td nowrap="nowrap">26.01 ~ 26.05</td>
+<td><a href="https://github.com/dhsama51/26-1_Capstone_Reinforcement_Learning_Agent_in_Handmade_Card_Game"><b>Call of the King</b></a></td>
+<td>Capstone Design</td>
+<td>[Python, PyTorch] Developed a PPO-based reinforcement learning agent and built a TCP pipeline between the training environment and a C# game engine.</td>
 </tr>
 <tr>
 <td nowrap="nowrap">26.03 ~ 26.06</td>
@@ -219,7 +211,7 @@ My long-term goal is to develop **capable, reliable, and secure AI systems** gro
 <td nowrap="nowrap">22.09 ~ 24.03</td>
 <td><b>육군 정보보호병</b></td>
 <td>Republic of Korea Army</td>
-<td>Performed NAC-based IP access control and routine security checks.</td>
+<td>Managed Linux server security and infrastructure operations.</td>
 </tr>
 <tr>
 <td nowrap="nowrap">21.04 ~ 21.09</td>
@@ -305,7 +297,7 @@ My long-term goal is to develop **capable, reliable, and secure AI systems** gro
 <tr>
 <td nowrap="nowrap">2025</td>
 <td><b>MobiSec</b></td>
-<td>Accepted Conference Poster Paper</td>
+<td>Poster Paper</td>
 <td>Validation of Traceability Attacks in NAS Registration Procedure</td>
 <td><a href="https://github.com/dhsama51/MobiSec/blob/main/Validation%20of%20Traceability%20Attacks%20in%20NAS%20Registration%20Procedure.pdf">Link</a></td>
 </tr>
