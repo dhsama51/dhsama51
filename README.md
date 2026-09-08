@@ -231,14 +231,12 @@ My long-term goal is to develop practical methods that can **discover, validate,
 </thead>
 <tbody>
 <tr>
-<td nowrap="nowrap">26.03.13</td>
-<td nowrap="nowrap"><b>정보보안기사 필기 합격</b></td>
-<td nowrap="nowrap">26.07.25 실기 응시 완료</td>
+<td nowrap="nowrap">26.08.28</td>
+<td nowrap="nowrap"><b>정보보안기사</b></td>
 </tr>
 <tr>
-<td nowrap="nowrap">26.03.11</td>
-<td nowrap="nowrap"><b>정보처리기사 필기 합격</b></td>
-<td nowrap="nowrap">26.07.19 실기 응시 완료</td>
+<td nowrap="nowrap">26.09.11</td>
+<td nowrap="nowrap"><b>정보처리기사</b></td>
 </tr>
 <tr>
 <td nowrap="nowrap">23.12.01</td>
