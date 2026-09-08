@@ -233,10 +233,12 @@ My long-term goal is to develop practical methods that can **discover, validate,
 <tr>
 <td nowrap="nowrap">26.08.28</td>
 <td nowrap="nowrap"><b>정보보안기사</b></td>
+<td>-</td>
 </tr>
 <tr>
 <td nowrap="nowrap">26.09.11</td>
 <td nowrap="nowrap"><b>정보처리기사</b></td>
+<td>-</td>
 </tr>
 <tr>
 <td nowrap="nowrap">23.12.01</td>
