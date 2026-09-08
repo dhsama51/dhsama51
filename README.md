@@ -38,11 +38,6 @@
 <tr><td colspan="3"><br/></td></tr>
 
 <tr>
-<td nowrap="nowrap">26.06 ~ </td>
-<td><b>LG Aimers 9th</b></td>
-<td>AI training program and hackathon using real-world datasets from LG</td>
-</tr>
-<tr>
 <td nowrap="nowrap">26.01 ~ 26.04</td>
 <td><a href="https://github.com/dhsama51/CSE"><b>CSE</b></a></td>
 <td>Undergraduate Intern — Cryptographic implementation and CKKS performance analysis</td>
