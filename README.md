@@ -2,8 +2,8 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=b4c5f9&height=180&text=%EC%9D%B4%EB%8F%99%ED%9B%88%20(Lee%20DongHoon)&animation=&fontColor=000000&fontSize=50" />
 
-### Lee DongHoon  
-<em>Systems & Network Security · TLS · Web Security · Empirical Vulnerability Analysis</em>
+### Lee DongHoon
+<em>Multimodal Security · LLM Security · Network & Protocol Security</em>
 
 <br/>
 
@@ -38,6 +38,11 @@
 <tr><td colspan="3"><br/></td></tr>
 
 <tr>
+<td nowrap="nowrap">26.08 ~</td>
+<td><b>ISS Lab</b></td>
+<td>Undergraduate Intern, Korea University — Network Security & AI Security</td>
+</tr>
+<tr>
 <td nowrap="nowrap">26.01 ~ 26.04</td>
 <td><a href="https://github.com/dhsama51/CSE"><b>CSE</b></a></td>
 <td>Undergraduate Intern — Cryptographic implementation and CKKS performance analysis</td>
@@ -61,11 +66,10 @@
 
 <div align="center">
 
-I am an undergraduate student at **Kookmin University**, majoring in **Information Security & Cryptomathematics** and double majoring in **Software**.  
-My current interests lie in **systems and network security, TLS, web security, and empirical vulnerability analysis**.
+I am an undergraduate student at **Kookmin University**, majoring in **Information Security & Cryptomathematics** and double majoring in **Software**.
+My background is in **empirical, protocol-level security research** — reproducing published attacks and validating whether their assumptions hold in real implementations (TLS, 5G NAS, DNS).
 
-Through research and coursework, I have reproduced published attacks, examined whether their assumptions hold in open-source environments, and implemented security protocols and cryptographic primitives.  
-I aim to extend these experiences toward identifying and experimentally validating security problems in **real-world protocols and implementations**.
+I am currently extending this methodology toward **the security of AI systems**, with a focus on **adversarial robustness of multimodal embedding/retrieval models and, more broadly, LLM and multimodal security**. I reproduce recent attacks from top security/AI venues, test whether their assumptions generalize beyond the reported setting, and analyze failure modes when a defense underperforms — the same empirical discipline I built in network security, applied to AI systems.
 
 </div>
 
@@ -82,16 +86,16 @@ I aim to extend these experiences toward identifying and experimentally validati
 </thead>
 <tbody>
 <tr>
-<td><b>Systems & Network Security</b></td>
-<td>Protocol Security, Implementation Analysis, Experimental Attack Validation</td>
+<td><b>Multimodal Security</b></td>
+<td>Adversarial Attacks on Multimodal Embedding/Retrieval, Cross-Modal Transferability, VLM Robustness</td>
 </tr>
 <tr>
-<td><b>TLS Security</b></td>
-<td>TLS, Certificate Validation, OpenSSL, Cryptographic Protocols</td>
+<td><b>LLM Security</b></td>
+<td>Adversarial Robustness, Jailbreak / Prompt Injection, Empirical Vulnerability Validation</td>
 </tr>
 <tr>
-<td><b>Web & Network Security</b></td>
-<td>HTTP Security, Parser Inconsistencies, Security Testing, Vulnerability Analysis</td>
+<td><b>Network & Protocol Security</b></td>
+<td>TLS, DNS, 5G NAS, Implementation Analysis, Reproducible Attack Validation</td>
 </tr>
 </tbody>
 </table>
@@ -100,10 +104,72 @@ I aim to extend these experiences toward identifying and experimentally validati
 
 ## 🧭 Research Interest
 
-I am interested in understanding how security assumptions fail across protocol specifications, software implementations, and deployed systems.  
-In particular, I want to study implementation flaws and interpretation gaps in network and web protocols through reproducible experiments.
+My current focus is on **adversarial robustness of multimodal embedding and retrieval systems** — how a single adversarial input can dominate nearest-neighbor search across unrelated queries (*hubness*), whether such attacks transfer across models with different architectures, and why proposed detectors succeed or fail under different query modalities. I am extending this same empirical approach — reproduce, stress-test the original claims, isolate root causes when results diverge — toward broader **LLM and multimodal security** problems, building on a foundation of protocol-level vulnerability research (TLS certificate validation, 5G NAS, DNS cache poisoning).
 
-My long-term goal is to develop practical methods that can **discover, validate, and help mitigate vulnerabilities in real-world systems**.
+---
+
+## 🌐 Featured: Multimodal Security Research
+
+<table width="100%">
+<thead>
+<tr>
+<th align="left" width="16%">Period</th>
+<th align="left" width="84%">Project</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td nowrap="nowrap">26.09 ~</td>
+<td>
+<a href="https://github.com/dhsama51/adversarial-hubness-reproduction"><b>Adversarial Hubness in Multi-Modal Retrieval — Reproduction & Extension</b></a><br/>
+[Python, CLIP, OpenCLIP, ImageBind, FAISS] Reproduced the adversarial hub attack from Zhang et al. (2024) on a CLIP-based image-text retrieval pipeline (MS-COCO, held-out ASR@1 ≈ 70%) and reimplemented the detector from its follow-up paper (Habler et al., 2026), comparing it against the official implementation.
+<ul>
+<li>Formulated and tested an original hypothesis — that transfer attack success rate correlates with representational similarity (RSA/Alignment) across 8 vision-language models — and found the correlation to be <b>not statistically significant</b>, a result that runs counter to the intuitive expectation</li>
+<li>Diagnosed why the official detector fails under one query-sampling mode (ROC-AUC ≈ 0.4–0.6) while succeeding under another (≈ 0.94) by reading its source code, tracing the failure to a likely image–text modality mismatch</li>
+<li>Systematically ruled out three alternative explanations (evaluation scale, surrogate model choice, hub-size cap) for an attack-strength discrepancy from the original paper through targeted ablations</li>
+<li>Practiced explicit self-review of scope: distinguished experiments that reproduce the paper's core claim (weight-sharing surrogates) from an independent extension the paper did not test</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+---
+
+## 📄 Recent Security Paper Analysis
+
+<table width="100%">
+<thead>
+<tr>
+<th align="left" width="12%">Date</th>
+<th align="left" width="26%">Paper</th>
+<th align="left" width="52%">Focus</th>
+<th align="left" width="10%">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td nowrap="nowrap">26.09</td>
+<td><b>Opossum Attack</b> (USENIX Sec'26)</td>
+<td>Application-layer desynchronization from the coexistence of implicit and opportunistic TLS; analyzed four resulting exploit classes and an IPv4-wide exposure scan</td>
+<td><a href="https://github.com/dhsama51/Security-Paper-Review/blob/main/analysis_opossum_attack_2026.pdf">Link</a></td>
+</tr>
+<tr>
+<td nowrap="nowrap">26.09</td>
+<td><b>Adversarial Hubness in Multi-Modal Retrieval</b> (IEEE S&P'26)</td>
+<td>Analyzed how an intentionally-crafted "adversarial hub" can dominate nearest-neighbor retrieval for thousands of unrelated queries at once — the paper that motivated the reproduction study above</td>
+<td><a href="https://github.com/dhsama51/Security-Paper-Review/blob/main/analysis_adversarial_hubness_2026.pdf">Link</a></td>
+</tr>
+<tr>
+<td nowrap="nowrap">26.08</td>
+<td><b>DNS Cache Poisoning Like it's 2006</b> (USENIX Sec'26)</td>
+<td>Recovering BIND 9's Xoshiro128** PRNG state from observable TXID/RRset-order leakage to defeat both TXID and UDP-port randomization</td>
+<td><a href="https://github.com/dhsama51/Security-Paper-Review/blob/main/analysis_dns_cache_poisoning_2026.pdf">Link</a></td>
+</tr>
+</tbody>
+</table>
+
+Ongoing habit of reading and presenting recent IEEE S&P / USENIX Security papers to sharpen the same empirical-vulnerability mindset before applying it to AI systems. Full slide deck for each paper: <a href="https://github.com/dhsama51/Security-Paper-Review">Security-Paper-Review</a>
 
 ---
 
@@ -120,40 +186,40 @@ My long-term goal is to develop practical methods that can **discover, validate,
 </thead>
 <tbody>
 <tr>
+<td nowrap="nowrap">26.03 ~ 26.06</td>
+<td><a href="https://github.com/dhsama51/Software/tree/main/26-1%20Multimodal%20AI"><b>Multimodal AI & Vision-Language Model Study</b></a></td>
+<td>멀티모달인공지능</td>
+<td>[Python, PyTorch] Implemented image-text retrieval with triplet loss, trained an image-captioning model, and ran CLIP zero-shot classification experiments across prompt templates.</td>
+</tr>
+<tr>
+<td nowrap="nowrap">26.01 ~ 26.05</td>
+<td><a href="https://github.com/dhsama51/26-1_Capstone_Reinforcement_Learning_Agent_in_Handmade_Card_Game"><b>Call of the King</b></a></td>
+<td>Capstone Design</td>
+<td>[Python, PyTorch] Designed a custom PvP card game and developed a PPO-based RL agent for automated balancing; when training plateaued, redesigned the state representation with a Transformer to better capture card–board relationships. Not directly related to current interests, but reflects the define-a-problem → design-a-model → improve-through-experiments cycle central to my research approach.</td>
+</tr>
+<tr>
+<td nowrap="nowrap">25.11</td>
+<td><a href="https://github.com/dhsama51/Software/tree/main/25-2%20Information%20and%20System%20Security"><b>Encrypted Traffic Analysis</b></a></td>
+<td>정보보호와시스템보안 프로젝트</td>
+<td>[Python] Analyzed encrypted traffic for website fingerprinting using a Random Forest–XGBoost soft-voting ensemble — an early exposure to combining ML with security analysis.</td>
+</tr>
+<tr>
 <td nowrap="nowrap">25.07 ~ 25.11</td>
 <td><a href="https://github.com/dhsama51/MobiSec/blob/main/Validation%20of%20Traceability%20Attacks%20in%20NAS%20Registration%20Procedure.pdf"><b>5G NAS Traceability Attack Validation</b></a></td>
 <td>MobiSec Undergraduate Intern</td>
-<td>[5G, Open-Source Testbed] Reproduced a published traceability attack and experimentally examined whether its assumptions held in the tested environment.</td>
+<td>[5G, Open-Source Testbed] Reproduced a published traceability attack and experimentally examined whether its assumptions held in the tested environment. Published as a poster paper at MobiSec'25.</td>
 </tr>
 <tr>
 <td nowrap="nowrap">25.07 ~ 25.08</td>
 <td><a href="https://github.com/dhsama51/Information_Security_Cryptography_and_Mathematics/blob/main/25-2%20Kookmin%20Crypto%20Festival/%EC%9D%B4%EB%8F%99%ED%9B%88%20%ED%8F%AC%EC%8A%A4%ED%84%B0%20OpenSSL%20CVE-2015-1793%20TLS%20%EC%9D%B8%EC%A6%9D%EC%84%9C%20%EA%B2%80%EC%A6%9D%20%EC%9A%B0%ED%9A%8C%20%EA%B3%B5%EA%B2%A9%20%EC%9E%AC%ED%98%84.pdf"><b>OpenSSL CVE-2015-1793 Reproduction</b></a></td>
 <td>MobiSec Undergraduate Intern</td>
-<td>[OpenSSL, TLS/PKI] Analyzed and reproduced a certificate-chain validation bypass and compared vulnerable and corrected validation behavior.</td>
-</tr>
-<tr>
-<td nowrap="nowrap">2025</td>
-<td><a href="https://github.com/dhsama51/Information_Security_Cryptography_and_Mathematics/blob/main/25-2%20Kookmin%20Crypto%20Festival/%EC%A0%95%EC%9C%A0%EC%A7%84%2C%20%EC%9D%B4%EB%8F%99%ED%9B%88%20%ED%8F%AC%EC%8A%A4%ED%84%B0%202025%20%EC%95%94%ED%98%B8%EB%B6%84%EC%84%9D%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C%206%EB%B2%88%20%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4.pdf"><b>2025 암호분석경진대회 6번 문제 풀이</b></a></td>
-<td>2025 국민암호페스티벌</td>
-<td>[Cryptanalysis, Digital Forensics] Recovered encrypted chat data using known plaintext, traced the exfiltrated files, and extracted a steganographic QR code to identify the meeting location.</td>
+<td>[OpenSSL, TLS/PKI] Analyzed and reproduced a certificate-chain validation bypass and compared vulnerable and corrected validation behavior. Awarded Excellence Prize at Kookmin Crypto Festival 2025.</td>
 </tr>
 <tr>
 <td nowrap="nowrap">24.10 ~ 24.12</td>
 <td><a href="https://github.com/dhsama51/Information_Security_Cryptography_and_Mathematics/tree/main/24-2%20Security%20Protocol"><b>miniTLS & Padding Oracle Attack</b></a></td>
 <td>Security Protocols</td>
 <td>[Python] Implemented a simplified TLS-like protocol and reproduced a padding oracle attack caused by distinguishable server responses.</td>
-</tr>
-<tr>
-<td nowrap="nowrap">25.11 ~ 25.12</td>
-<td><a href="https://github.com/dhsama51/Information_Security_Cryptography_and_Mathematics/tree/main/25-2%20Security%20Network%20Programming"><b>Let&apos;s Quiz</b></a></td>
-<td>보안NW프로그래밍</td>
-<td>[C, OpenSSL] Implemented a TLS-based real-time multithreaded quiz system with concurrent client and session handling.</td>
-</tr>
-<tr>
-<td nowrap="nowrap">25.11</td>
-<td><a href="https://github.com/dhsama51/Software/tree/main/25-2%20Information%20and%20System%20Security"><b>Encrypted Traffic Analysis</b></a></td>
-<td>정보보호와시스템보안 프로젝트</td>
-<td>[Python] Analyzed encrypted traffic for website fingerprinting using a Soft Voting Classifier combining Random Forest and XGBoost.</td>
 </tr>
 </tbody>
 </table>
@@ -183,24 +249,6 @@ My long-term goal is to develop practical methods that can **discover, validate,
 <td><a href="https://github.com/dhsama51/CSE"><b>Cryptographic Arithmetic Implementation</b></a></td>
 <td>CSE Undergraduate Intern</td>
 <td>[C] Implemented LEA-128/192/256, 256-bit P-256 field arithmetic, elliptic-curve point operations, and multiple scalar-multiplication algorithms.</td>
-</tr>
-<tr>
-<td nowrap="nowrap">26.01 ~ 26.05</td>
-<td><a href="https://github.com/dhsama51/26-1_Capstone_Reinforcement_Learning_Agent_in_Handmade_Card_Game"><b>Call of the King</b></a></td>
-<td>Capstone Design</td>
-<td>[Python, PyTorch] Developed a PPO-based reinforcement learning agent and built a TCP pipeline between the training environment and a C# game engine.</td>
-</tr>
-<tr>
-<td nowrap="nowrap">26.03 ~ 26.06</td>
-<td><a href="https://github.com/dhsama51/Software/tree/main/26-1%20AI%20Hardware"><b>AI Accelerator & Systolic Array Study</b></a></td>
-<td>인공지능하드웨어</td>
-<td>[Python] Studied systolic arrays, model compression, and hardware-aware deep learning execution.</td>
-</tr>
-<tr>
-<td nowrap="nowrap">26.05</td>
-<td><a href="https://github.com/dhsama51/Software/tree/main/26-1%20Digital%20Logic%20Design"><b>FPGA Snake Game</b></a></td>
-<td>논리회로설계</td>
-<td>[Verilog] Implemented a Snake Game on FPGA and compared software-level and RTL-level implementation behavior.</td>
 </tr>
 <tr>
 <td nowrap="nowrap">22.09 ~ 24.03</td>
