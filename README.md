@@ -39,7 +39,7 @@
 
 <tr>
 <td nowrap="nowrap">26.08 ~</td>
-<td><b>ISS Lab</b></td>
+<td><a href="https://github.com/dhsama51/ISS-Lab"><b>ISS Lab</b></a></td>
 <td>Undergraduate Intern, Korea University — Network Security & AI Security</td>
 </tr>
 <tr>
@@ -152,24 +152,24 @@ My current focus is on **adversarial robustness of multimodal embedding and retr
 <td nowrap="nowrap">26.09</td>
 <td><b>Opossum Attack</b> (USENIX Sec'26)</td>
 <td>Application-layer desynchronization from the coexistence of implicit and opportunistic TLS; analyzed four resulting exploit classes and an IPv4-wide exposure scan</td>
-<td><a href="https://github.com/dhsama51/Security-Paper-Review/blob/main/analysis_opossum_attack_2026.pdf">Link</a></td>
+<td><a href="https://github.com/dhsama51/ISS-Lab/blob/main/Security%20Paper%20Review/analysis_opossum_attack_2026.pdf">Link</a></td>
 </tr>
 <tr>
 <td nowrap="nowrap">26.09</td>
 <td><b>Adversarial Hubness in Multi-Modal Retrieval</b> (IEEE S&P'26)</td>
 <td>Analyzed how an intentionally-crafted "adversarial hub" can dominate nearest-neighbor retrieval for thousands of unrelated queries at once — the paper that motivated the reproduction study above</td>
-<td><a href="https://github.com/dhsama51/Security-Paper-Review/blob/main/analysis_adversarial_hubness_2026.pdf">Link</a></td>
+<td><a href="https://github.com/dhsama51/ISS-Lab/blob/main/Security%20Paper%20Review/analysis_adversarial_hubness_2026.pdf">Link</a></td>
 </tr>
 <tr>
 <td nowrap="nowrap">26.08</td>
 <td><b>DNS Cache Poisoning Like it's 2006</b> (USENIX Sec'26)</td>
 <td>Recovering BIND 9's Xoshiro128** PRNG state from observable TXID/RRset-order leakage to defeat both TXID and UDP-port randomization</td>
-<td><a href="https://github.com/dhsama51/Security-Paper-Review/blob/main/analysis_dns_cache_poisoning_2026.pdf">Link</a></td>
+<td><a href="https://github.com/dhsama51/ISS-Lab/blob/main/Security%20Paper%20Review/analysis_dns_cache_poisoning_2026.pdf">Link</a></td>
 </tr>
 </tbody>
 </table>
 
-Ongoing habit of reading and presenting recent IEEE S&P / USENIX Security papers to sharpen the same empirical-vulnerability mindset before applying it to AI systems. Full slide deck for each paper: <a href="https://github.com/dhsama51/Security-Paper-Review">Security-Paper-Review</a>
+Ongoing habit of reading and presenting recent IEEE S&P / USENIX Security papers to sharpen the same empirical-vulnerability mindset before applying it to AI systems. Full slide deck for each paper: <a href="https://github.com/dhsama51/ISS-Lab">ISS-Lab</a>
 
 ---
 
