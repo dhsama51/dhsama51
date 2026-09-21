@@ -53,7 +53,7 @@
 <td>Undergraduate Intern / Researcher — TLS analysis and 5G security</td>
 </tr>
 <tr>
-<td nowrap="nowrap">25.01 ~ 25.04</td>
+<td nowrap="nowrap">24.12 ~ 25.05</td>
 <td><b>FaS</b></td>
 <td>Digital forensics academic club in the Department of Information Security, Cryptology and Mathematics</td>
 </tr>
