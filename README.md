@@ -69,7 +69,7 @@
 I am an undergraduate student at **Kookmin University**, majoring in **Information Security & Cryptomathematics** and double majoring in **Software**.
 My background is in **empirical, protocol-level security research** — reproducing published attacks and validating whether their assumptions hold in real implementations (TLS, 5G NAS, DNS).
 
-I am currently extending this methodology toward **the security of AI systems**, with a focus on **adversarial robustness of multimodal embedding/retrieval models and, more broadly, LLM and multimodal security**. I reproduce recent attacks from top security/AI venues, test whether their assumptions generalize beyond the reported setting, and analyze failure modes when a defense underperforms — the same empirical discipline I built in network security, applied to AI systems.
+I am currently extending this methodology toward **the security of AI systems**, working on two parallel fronts: **adversarial robustness of multimodal embedding/retrieval models** and **poisoning/responsibility-attribution problems in LLM-based RAG systems**. In both cases, I reproduce recent attacks and defenses from top security/AI venues, test whether their assumptions generalize beyond the reported setting, and analyze failure modes when a defense underperforms — the same empirical discipline I built in network security, applied to AI systems.
 
 </div>
 
@@ -91,7 +91,7 @@ I am currently extending this methodology toward **the security of AI systems**,
 </tr>
 <tr>
 <td><b>LLM Security</b></td>
-<td>Adversarial Robustness, Jailbreak / Prompt Injection, Empirical Vulnerability Validation</td>
+<td>Adversarial Robustness, Jailbreak / Prompt Injection, RAG Poisoning, Responsibility Attribution, Empirical Vulnerability Validation</td>
 </tr>
 <tr>
 <td><b>Network & Protocol Security</b></td>
@@ -104,11 +104,17 @@ I am currently extending this methodology toward **the security of AI systems**,
 
 ## 🧭 Research Interest
 
-My current focus is on **adversarial robustness of multimodal embedding and retrieval systems** — how a single adversarial input can dominate nearest-neighbor search across unrelated queries (*hubness*), whether such attacks transfer across models with different architectures, and why proposed detectors succeed or fail under different query modalities. I am extending this same empirical approach — reproduce, stress-test the original claims, isolate root causes when results diverge — toward broader **LLM and multimodal security** problems, building on a foundation of protocol-level vulnerability research (TLS certificate validation, 5G NAS, DNS cache poisoning).
+My current focus spans two related empirical directions in AI security.
+
+The first is **adversarial robustness of multimodal embedding and retrieval systems** — how a single adversarial input can dominate nearest-neighbor search across unrelated queries (*hubness*), whether such attacks transfer across models with different architectures, and why proposed detectors succeed or fail under different query modalities.
+
+The second is **poisoning and responsibility attribution in LLM-based RAG (Retrieval-Augmented Generation) systems** — given a misgeneration caused by poisoned context, how an attribution algorithm narrows down which retrieved passage is responsible, where that narrowing procedure can be forced to terminate early or fail to terminate at all, and how an adaptive attacker aware of the attribution mechanism can exploit it to evade detection regardless of how deep the poisoned payload is hidden.
+
+Across both directions I apply the same empirical approach — reproduce the original claims, stress-test them at their boundary conditions, and isolate root causes when results diverge — building on a foundation of protocol-level vulnerability research (TLS certificate validation, 5G NAS, DNS cache poisoning).
 
 ---
 
-## 🌐 Featured: Multimodal Security Research
+## 🌐 Featured Research
 
 <table width="100%">
 <thead>
@@ -128,6 +134,19 @@ My current focus is on **adversarial robustness of multimodal embedding and retr
 <li>Diagnosed why the official detector fails under one query-sampling mode (ROC-AUC ≈ 0.4–0.6) while succeeding under another (≈ 0.94) by reading its source code, tracing the failure to a likely image–text modality mismatch</li>
 <li>Systematically ruled out three alternative explanations (evaluation scale, surrogate model choice, hub-size cap) for an attack-strength discrepancy from the original paper through targeted ablations</li>
 <li>Practiced explicit self-review of scope: distinguished experiments that reproduce the paper's core claim (weight-sharing surrogates) from an independent extension the paper did not test</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td nowrap="nowrap">26.10 ~</td>
+<td>
+<a href="https://github.com/dhsama51/ragorigin-reproduction"><b>RAGOrigin Edge Case Reproduction — Lightweight Replication</b></a><br/>
+[Python, Qwen2.5-1.5B-Instruct, Llama-3.2-1B-Instruct, FAISS] Replicated, on a low-cost GPU with lightweight models, the attribution-scope-narrowing algorithm and Responsibility-Score threshold from <i>"Who Taught the Lie? Responsibility Attribution for Poisoned Knowledge in RAG"</i> (RAGOrigin, IEEE S&P'26), cross-checking against the authors' official implementation and correcting three discrepancies found in the process.
+<ul>
+<li>Found that forcing early termination causes a deeply-hidden poisoned text (22 segments in) to go <b>entirely undetected in 5/5 cases</b>, since it never enters the final attribution scope</li>
+<li>Identified a mathematical parity condition — the termination condition can only be satisfied at an even iteration count — under which scope narrowing is <b>provably unable to terminate normally</b> at certain poisoned-text insertion ranks, forcing a near-exhaustive scan instead of a clean detection</li>
+<li>Constructed an adaptive termination-forcing attack under the paper's strong-attacker assumption that <b>evaded detection in 20/20 cases</b> (5 questions × 4 payload depths), regardless of how deep the real payload was hidden</li>
+<li>Swapped the judgment LLM between self-judging and a separate judge and showed that final detection accuracy stayed identical (DACC = 1.00) while the average number of iterations roughly doubled (2.40 → 4.00) — isolating an efficiency effect of judgment strictness from a detection-accuracy effect</li>
 </ul>
 </td>
 </tr>
