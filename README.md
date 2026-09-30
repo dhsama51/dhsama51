@@ -66,10 +66,10 @@
 
 <div align="center">
 
-I am an undergraduate student at **Kookmin University**, majoring in **Information Security & Cryptomathematics** and double majoring in **Software**.
-My background is in **empirical, protocol-level security research** — reproducing published attacks and validating whether their assumptions hold in real implementations (TLS, 5G NAS, DNS).
+I am an undergraduate student at **Kookmin University**, majoring in **Information Security, Cryptomathematics and Mathematics** and double majoring in **Software**.
+I am interested in **how LLMs and vision-language models represent information, align different modalities, and reason** — and in using that understanding to build models that are **more efficient and more reliable** in real systems.
 
-I am currently extending this methodology toward **the security of AI systems**, working on two parallel fronts: **adversarial robustness of multimodal embedding/retrieval models** and **poisoning/responsibility-attribution problems in LLM-based RAG systems**. In both cases, I reproduce recent attacks and defenses from top security/AI venues, test whether their assumptions generalize beyond the reported setting, and analyze failure modes when a defense underperforms — the same empirical discipline I built in network security, applied to AI systems.
+My research habit comes from **empirical, protocol-level security research** — reproducing published attacks and validating whether their assumptions hold in real implementations (TLS, 5G NAS). I now apply the same discipline to AI systems: in two independent projects on **multimodal retrieval** and **LLM-based RAG**, I reproduced recent papers from top venues, tested whether their assumptions hold beyond the reported setting, and traced unexpected results back to representation, modality alignment, and model-judgment behavior.
 
 </div>
 
@@ -86,12 +86,16 @@ I am currently extending this methodology toward **the security of AI systems**,
 </thead>
 <tbody>
 <tr>
-<td><b>Multimodal Security</b></td>
-<td>Adversarial Attacks on Multimodal Embedding/Retrieval, Cross-Modal Transferability, VLM Robustness</td>
+<td><b>Multimodal Learning & VLMs</b></td>
+<td>Representation Learning, Multimodal Alignment, Image–Text Retrieval, Vision-Language Models</td>
 </tr>
 <tr>
-<td><b>LLM Security</b></td>
-<td>Adversarial Robustness, Jailbreak / Prompt Injection, RAG Poisoning, Responsibility Attribution, Empirical Vulnerability Validation</td>
+<td><b>Efficient & Reliable LLMs</b></td>
+<td>Efficient Adaptation / Inference, Reasoning, Hallucination & Reliability, Retrieval-Augmented Generation</td>
+</tr>
+<tr>
+<td><b>AI Security & Robustness</b></td>
+<td>Adversarial Robustness of Multimodal Retrieval, Cross-Model Transferability, RAG Poisoning, Responsibility Attribution</td>
 </tr>
 <tr>
 <td><b>Network & Protocol Security</b></td>
@@ -104,13 +108,15 @@ I am currently extending this methodology toward **the security of AI systems**,
 
 ## 🧭 Research Interest
 
-My current focus spans two related empirical directions in AI security.
+My long-term interest is in **how LLMs, VLMs, and multimodal models represent information, align modalities, and reason** — and in using that understanding to propose models and methods that improve both performance and training/inference efficiency, while remaining reliable in real systems.
 
-The first is **adversarial robustness of multimodal embedding and retrieval systems** — how a single adversarial input can dominate nearest-neighbor search across unrelated queries (*hubness*), whether such attacks transfer across models with different architectures, and why proposed detectors succeed or fail under different query modalities.
+My current work approaches this question from the reliability side, through two independent reproduction-and-extension projects.
 
-The second is **poisoning and responsibility attribution in LLM-based RAG (Retrieval-Augmented Generation) systems** — given a misgeneration caused by poisoned context, how an attribution algorithm narrows down which retrieved passage is responsible, where that narrowing procedure can be forced to terminate early or fail to terminate at all, and how an adaptive attacker aware of the attribution mechanism can exploit it to evade detection regardless of how deep the poisoned payload is hidden.
+The first is on **adversarial hubness in multimodal retrieval** — why a single adversarial image can dominate nearest-neighbor search across unrelated queries (*hubness*), why that dominance largely collapses when the image is moved to another encoder, and why a detector's success depends on whether its queries come from the text or the image modality.
 
-Across both directions I apply the same empirical approach — reproduce the original claims, stress-test them at their boundary conditions, and isolate root causes when results diverge — building on a foundation of protocol-level vulnerability research (TLS certificate validation, 5G NAS, DNS cache poisoning).
+The second is on **responsibility attribution in LLM-based RAG (Retrieval-Augmented Generation) systems** — how an attribution algorithm narrows down which retrieved passage caused a misgeneration, how its termination condition can be forced to stop before a deeply hidden poison is reached, and how the choice of judgment LLM changes the algorithm's efficiency without changing its accuracy.
+
+Across both directions I apply the same empirical approach — reproduce the original claims, stress-test them at their boundary conditions, and isolate root causes when results diverge — building on a foundation of protocol-level security research (TLS certificate validation, 5G NAS).
 
 ---
 
@@ -125,28 +131,28 @@ Across both directions I apply the same empirical approach — reproduce the ori
 </thead>
 <tbody>
 <tr>
-<td nowrap="nowrap">26.09 ~ 26.09</td>
+<td nowrap="nowrap">26.09</td>
 <td>
 <a href="https://github.com/dhsama51/adversarial-hubness-reproduction"><b>Adversarial Hubness in Multi-Modal Retrieval — Reproduction & Extension</b></a><br/>
-[Python, CLIP, OpenCLIP, ImageBind, FAISS] Reproduced the adversarial hub attack from Zhang et al. (2024) on a CLIP-based image-text retrieval pipeline (MS-COCO, held-out ASR@1 ≈ 70%) and reimplemented the detector from its follow-up paper (Habler et al., 2026), comparing it against the official implementation.
+[Python, CLIP, OpenCLIP, ImageBind, FAISS] Reproduced the adversarial hub attack from Zhang et al. (IEEE S&P'26) on a CLIP-based image-text retrieval pipeline (MS-COCO, held-out ASR@1 ≈ 68% vs. ~85% reported, on a single 8 GB GPU) and reimplemented the detector from its follow-up paper (Habler et al., 2026), comparing it against the official implementation.
 <ul>
-<li>Formulated and tested an original hypothesis — that transfer attack success rate correlates with representational similarity (RSA/Alignment) across 8 vision-language models — and found the correlation to be <b>not statistically significant</b>, a result that runs counter to the intuitive expectation</li>
-<li>Diagnosed why the official detector fails under one query-sampling mode (ROC-AUC ≈ 0.4–0.6) while succeeding under another (≈ 0.94) by reading its source code, tracing the failure to a likely image–text modality mismatch</li>
-<li>Systematically ruled out three alternative explanations (evaluation scale, surrogate model choice, hub-size cap) for an attack-strength discrepancy from the original paper through targeted ablations</li>
+<li>Formulated and tested an original hypothesis — that transfer attack success rate correlates with representational similarity (RSA/Alignment) across 8 image–text encoders — and found <b>no statistically significant relationship</b> in the current sample (n = 7 targets, RSA r = 0.43, p = 0.33); hubs reaching 99.8% ASR@1 in their own embedding space kept only 3–7% on other encoders</li>
+<li>Diagnosed why the official detector is near chance under its <code>mixed</code> query-sampling mode (ROC-AUC 0.36–0.57) yet succeeds with real caption queries (0.94–0.98) on identical inputs — the query source, not the algorithm, explains the gap — and, by reading its source code, traced the failure to a likely (not yet isolated) image–text modality mismatch</li>
+<li>Found that word hubs match or outperform cluster hubs on general queries, reversing the original paper's ranking, and tested candidate causes through targeted ablations: evaluation scale was rejected, while surrogate model and cluster-size restriction were rejected only in combination, leaving the cause unexplained</li>
 <li>Practiced explicit self-review of scope: distinguished experiments that reproduce the paper's core claim (weight-sharing surrogates) from an independent extension the paper did not test</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td nowrap="nowrap">26.09 ~ 26.09</td>
+<td nowrap="nowrap">26.09</td>
 <td>
-<a href="https://github.com/dhsama51/ragorigin-reproduction"><b>RAGOrigin Edge Case Reproduction — Lightweight Replication</b></a><br/>
+<a href="https://github.com/dhsama51/ragorigin-reproduction"><b>RAGOrigin Edge Case Reproduction — Reproduction & Extension</b></a><br/>
 [Python, Qwen2.5-1.5B-Instruct, Llama-3.2-1B-Instruct, FAISS] Replicated, on a low-cost GPU with lightweight models, the attribution-scope-narrowing algorithm and Responsibility-Score threshold from <i>"Who Taught the Lie? Responsibility Attribution for Poisoned Knowledge in RAG"</i> (RAGOrigin, IEEE S&P'26), cross-checking against the authors' official implementation and correcting three discrepancies found in the process.
 <ul>
 <li>Found that forcing early termination causes a deeply-hidden poisoned text (22 segments in) to go <b>entirely undetected in 5/5 cases</b>, since it never enters the final attribution scope</li>
-<li>Identified a mathematical parity condition — the termination condition can only be satisfied at an even iteration count — under which scope narrowing is <b>provably unable to terminate normally</b> at certain poisoned-text insertion ranks, forcing a near-exhaustive scan instead of a clean detection</li>
-<li>Constructed an adaptive termination-forcing attack under the paper's strong-attacker assumption that <b>evaded detection in 20/20 cases</b> (5 questions × 4 payload depths), regardless of how deep the real payload was hidden</li>
-<li>Swapped the judgment LLM between self-judging and a separate judge and showed that final detection accuracy stayed identical (DACC = 1.00) while the average number of iterations roughly doubled (2.40 → 4.00) — isolating an efficiency effect of judgment strictness from a detection-accuracy effect</li>
+<li>Constructed an adaptive termination-forcing attack under the paper's strong-attacker assumption that <b>evaded detection in 20/20 cases</b> (5 questions × 4 payload depths, ranks 200–2000), regardless of how deep the real payload was hidden</li>
+<li>Showed a second weakness of the same termination condition (stop once Match and No-match segment counts are equal): when no poison sits in the top-K — as could happen when re-running attribution after the top-K poisons are removed — a single poison at rank 2K+1 <b>kept scope narrowing from terminating</b> (5/5 hit the 30-iteration cap), so it was still included only after scanning 150 texts</li>
+<li>Swapped the judgment LLM between self-judging (Qwen2.5-1.5B, also the generation and proxy LLM) and a separate judge (Llama-3.2-1B) and showed that final detection accuracy stayed identical (DACC = 1.00) while the average number of iterations rose from 2.40 to 4.00 — isolating an efficiency effect of judgment strictness from a detection-accuracy effect</li>
 </ul>
 </td>
 </tr>
@@ -403,9 +409,14 @@ Ongoing habit of reading and presenting recent IEEE S&P / USENIX Security papers
 </thead>
 <tbody>
 <tr>
-<td nowrap="nowrap">25.11.09</td>
+<td nowrap="nowrap">25.11.18</td>
 <td><b>TOEIC</b></td>
 <td>830</td>
+</tr>
+<tr>
+<td nowrap="nowrap">26.09.30</td>
+<td><b>TEPS</b></td>
+<td>360</td>
 </tr>
 </tbody>
 </table>
