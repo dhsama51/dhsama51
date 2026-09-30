@@ -125,7 +125,7 @@ Across both directions I apply the same empirical approach — reproduce the ori
 </thead>
 <tbody>
 <tr>
-<td nowrap="nowrap">26.09 ~</td>
+<td nowrap="nowrap">26.09 ~ 26.09</td>
 <td>
 <a href="https://github.com/dhsama51/adversarial-hubness-reproduction"><b>Adversarial Hubness in Multi-Modal Retrieval — Reproduction & Extension</b></a><br/>
 [Python, CLIP, OpenCLIP, ImageBind, FAISS] Reproduced the adversarial hub attack from Zhang et al. (2024) on a CLIP-based image-text retrieval pipeline (MS-COCO, held-out ASR@1 ≈ 70%) and reimplemented the detector from its follow-up paper (Habler et al., 2026), comparing it against the official implementation.
@@ -138,7 +138,7 @@ Across both directions I apply the same empirical approach — reproduce the ori
 </td>
 </tr>
 <tr>
-<td nowrap="nowrap">26.10 ~</td>
+<td nowrap="nowrap">26.09 ~ 26.09</td>
 <td>
 <a href="https://github.com/dhsama51/ragorigin-reproduction"><b>RAGOrigin Edge Case Reproduction — Lightweight Replication</b></a><br/>
 [Python, Qwen2.5-1.5B-Instruct, Llama-3.2-1B-Instruct, FAISS] Replicated, on a low-cost GPU with lightweight models, the attribution-scope-narrowing algorithm and Responsibility-Score threshold from <i>"Who Taught the Lie? Responsibility Attribution for Poisoned Knowledge in RAG"</i> (RAGOrigin, IEEE S&P'26), cross-checking against the authors' official implementation and correcting three discrepancies found in the process.
