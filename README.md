@@ -174,6 +174,12 @@ Across both directions I apply the same empirical approach — reproduce the ori
 </thead>
 <tbody>
 <tr>
+<td nowrap="nowrap">26.10</td>
+<td><b>Who Taught the Lie? Responsibility Attribution for Poisoned Knowledge in RAG</b> (IEEE S&P'26)</td>
+<td>RAGOrigin: black-box tracing of poisoned texts behind a RAG misgeneration from only the reported (question, wrong answer) — adaptive attribution scope plus a combined retrieval/generation responsibility score; identified edge cases in its scope-termination rule (Eq. 4) that motivated a follow-up reproduction</td>
+<td><a href="https://github.com/dhsama51/Security-Paper-Review/blob/main/analysis_Who_Taught_the_Lie.pdf">Link</a></td>
+</tr>
+<tr>
 <td nowrap="nowrap">26.09</td>
 <td><b>Opossum Attack</b> (USENIX Sec'26)</td>
 <td>Application-layer desynchronization from the coexistence of implicit and opportunistic TLS; analyzed four resulting exploit classes and an IPv4-wide exposure scan</td>
