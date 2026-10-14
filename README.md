@@ -131,6 +131,20 @@ Across both directions I apply the same empirical approach — reproduce the ori
 </thead>
 <tbody>
 <tr>
+<td nowrap="nowrap">26.10</td>
+<td>
+<a href="https://github.com/dhsama51/videoseek-reproduction"><b>VideoSeek with a 4B Open Model — Lightweight Replication & Security Extensions</b></a><br/>
+[Python, Qwen3.5-4B (GGUF), llama.cpp, LVBench] Ran the authors' unmodified agent from <i>"VideoSeek: Long-Horizon Video Agent with Tool-Guided Seeking"</i> (CVPR'26) on a single 8 GB GPU, with one 4-bit Qwen3.5-4B model in every role (in place of GPT-5), over 63 LVBench questions from 9 long videos (avg. ≈ 67 min). Tested whether the paper's "fewer frames, equal or better accuracy" claim still holds with a small open model, and measured what happens when untrusted subtitles enter the agent's history.
+<ul>
+<li>At the same frame budget (162 frames), VideoSeek reached <b>25.4% vs. 41.3%</b> for uniform single-pass (−15.9 pt, 95% CI [−28.6, −1.6], p = 0.041). Almost all of the gap came from 23 questions where the agent gave no option at all, mostly because the answer step copied the tool-call format instead of giving a letter. On the 40 questions it did answer, the systems were indistinguishable (40.0% vs. 42.5%)</li>
+<li>Showed that <b>one injected subtitle line</b> takes over both systems (ASR 76.7% VideoSeek / 86.7% single-pass; the difference is not significant). In VideoSeek it also works as an early-termination attack, cutting frames viewed from 168 to 95 (p = 0.014)</li>
+<li>Built a policy-decoupled guardrail that judges only the text being checked: filtering on the input side caught 30/30 injected lines and brought single-pass ASR down from 86.7% to 33.3%. On the output side, however, it flagged 80–90% of clean <code>&lt;skim&gt;</code>/<code>&lt;focus&gt;</code> outputs, because those tools are <i>asked</i> to answer. VideoSeek ASR only fell to 58.6%, since the agent's own thoughts already contained the injected answer</li>
+<li>Probed the paper's "video logic flow" hypothesis by shuffling 45 s segments: search length stayed the same, but the share of questions in which <code>&lt;skim&gt;</code>/<code>&lt;focus&gt;</code> ever reached the clue fell from 55% to 31%. The accuracy test was inconclusive because VideoSeek was already at chance (a floor effect)</li>
+<li>Ruled out two simple explanations: replaying only the answer step with a forced-choice instruction still gave no option in 13/20 cases, and giving the viewer the video storyline did not improve its accuracy on the oracle clip (51.9% → 46.3%)</li>
+</ul>
+</td>
+</tr>
+<tr>
 <td nowrap="nowrap">26.09</td>
 <td>
 <a href="https://github.com/dhsama51/adversarial-hubness-reproduction"><b>Adversarial Hubness in Multi-Modal Retrieval — Reproduction & Extension</b></a><br/>
